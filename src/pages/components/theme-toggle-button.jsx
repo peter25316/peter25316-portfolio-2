@@ -4,7 +4,7 @@ import { BsSun } from "react-icons/bs";
 const ThemeToggleButton = (props) => {
   const { dark, setTheme } = props;
   const darkButtonStyle =
-    "cursor-pointer w-10 h-10 text-3xl ml-auto p-3 rounded duration-300 ";
+    "cursor-pointer w-10 h-10 text-3xl mx-2 ml-auto p-3 rounded-md duration-300 ";
 
   return dark ? (
     <BsSun

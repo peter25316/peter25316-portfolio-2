@@ -5,7 +5,21 @@
 
 @layer base {
   html {
-    @apply text-gray-600;
+    @apply text-gray-700;
     font-family: "M PLUS Rounded 1c", sans-serif;
+  }
+}
+
+@layer utilities {
+  .nav-item {
+    @apply relative;
+  }
+
+  .nav-item::after {
+    @apply content-[''] bg-gray-700 dark:bg-[#F4EDE4] h-[2px] w-[0%] left-0 bottom-[2px] rounded-lg absolute duration-200;
+  }
+
+  .nav-item:hover::after {
+    @apply w-[100%];
   }
 }
