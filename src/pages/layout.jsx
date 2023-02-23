@@ -1,8 +1,9 @@
-import NavBar from "./components/navbar";
-import Main from "./components/main";
+import NavBar from "../components/navbar";
+import Main from "../components/main";
+import Footer from "@/components/footer";
 import { useState } from "react";
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
   const [dark, setDark] = useState(true);
 
   const setTheme = () => {
@@ -16,9 +17,10 @@ const Layout = (props) => {
         " antialiased transition-all duration-200"
       }
     >
-      <div className="min-h-screen dark:text-[#F5F5F5]">
+      <div className="flex flex-col min-h-screen dark:text-gray-200">
         <NavBar dark={dark} setTheme={setTheme}></NavBar>
-        <Main>{props.children}</Main>
+        <Main>{children}</Main>
+        <Footer></Footer>
       </div>
     </div>
   );

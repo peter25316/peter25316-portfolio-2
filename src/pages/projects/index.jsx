@@ -1,8 +1,10 @@
+import Section from "@/components/section";
+
 const Projects = () => {
   return (
-    <div>
+    <Section>
       <h1>This is Projects</h1>
-    </div>
+    </Section>
   );
 };
 

@@ -1,6 +1,7 @@
 import { GoThreeBars } from "react-icons/go";
 import Link from "next/link";
 import { Box, Menu, MenuButton, MenuList, IconButton } from "@chakra-ui/react";
+
 const Hamburger = (props) => {
   const { dark } = props;
   const btnBg = dark ? "#303033" : "#E2E8F0";
@@ -29,6 +30,17 @@ const Hamburger = (props) => {
             <Link className="nav-item" href="/">
               About
             </Link>
+            <Link className="nav-item" href="/">
+              Resume
+            </Link>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              className="flex items-center gap-1"
+              href="https://github.com/peter25316/peter25316-portfolio-2"
+            >
+              <span className="nav-item ">View Source</span>
+            </a>
           </div>
         </MenuList>
       </Menu>
