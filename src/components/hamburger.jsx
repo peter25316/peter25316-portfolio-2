@@ -4,7 +4,7 @@ import { Box, Menu, MenuButton, MenuList, IconButton } from "@chakra-ui/react";
 import { ThemeContext } from "./theme";
 import { useContext } from "react";
 
-const Hamburger = (props) => {
+const Hamburger = () => {
   const { theme: dark } = useContext(ThemeContext);
   const btnBg = dark ? "#303033" : "#E2E8F0";
   return (
