@@ -51,5 +51,3 @@ const Hamburger = () => {
 };
 
 export default Hamburger;
-
-// className="cursor-pointer w-10 h-10 text-3xl ml-auto p-3 rounded-md border border-[#353538]"

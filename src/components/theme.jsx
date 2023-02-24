@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { extendTheme } from "@chakra-ui/react";
 
-const ThemeContext = React.createContext();
-
 const FontTheme = extendTheme({
   fonts: {
     body: `'M PLUS Rounded 1c'`,
     heading: `'M PLUS Rounded 1c'`,
   },
 });
+
+const ThemeContext = React.createContext();
 
 const ThemeContextProvider = (props) => {
   const [theme, setTheme] = useState(true);
