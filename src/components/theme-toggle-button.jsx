@@ -8,7 +8,7 @@ const ThemeToggleButton = (props) => {
     "cursor-pointer w-10 h-10 text-3xl mx-2 p-3 rounded-md duration-200 ";
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" initial={false}>
       <motion.div
         key={dark ? "sun" : "moon"}
         initial={{ y: 10, opacity: 0 }}

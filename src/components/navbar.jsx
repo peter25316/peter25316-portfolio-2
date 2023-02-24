@@ -16,11 +16,11 @@ const NavBar = (props) => {
         </div>
 
         <div className="hidden items-center gap-6 mx-6 md:flex">
-          <Link className="nav-item" href="/projects">
-            Projects
-          </Link>
           <Link className="nav-item" href="/">
             About
+          </Link>
+          <Link className="nav-item" href="/projects">
+            Projects
           </Link>
           <Link className="nav-item" href="/resume">
             Resume

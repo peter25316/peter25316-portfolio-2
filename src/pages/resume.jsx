@@ -7,7 +7,7 @@ const Resume = () => {
     <Layout title="Resume">
       <Section>
         <a
-          className="btn mt-4"
+          className="btn mt-14 md:mt-8"
           rel="noreferrer"
           target="_blank"
           href="/Resume_Long_Huynh.pdf"
