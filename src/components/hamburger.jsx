@@ -30,7 +30,7 @@ const Hamburger = (props) => {
             <Link className="nav-item" href="/">
               About
             </Link>
-            <Link className="nav-item" href="/">
+            <Link className="nav-item" href="/resume">
               Resume
             </Link>
             <a

@@ -10,8 +10,8 @@
 
 @layer utilities {
   .btn {
-    @apply flex bg-teal-500 text-white drop-shadow-sm font-semibold px-4 py-2 items-center gap-1 rounded-lg
-     hover:bg-teal-600 transition-all dark:text-gray-800 dark:bg-teal-300 dark:hover:bg-teal-400;
+    @apply flex bg-teal-600 text-white drop-shadow-sm font-semibold px-4 py-2 items-center gap-1 rounded-lg
+     hover:bg-teal-700 transition-all dark:text-gray-800 dark:bg-teal-300 dark:hover:bg-teal-400;
   }
 
   .nav-item {
@@ -35,7 +35,7 @@
   }
 
   .social-item {
-    @apply flex items-center gap-2 text-teal-200 drop-shadow-md font-semibold px-4 py-2 hover:bg-teal-800 hover:bg-opacity-20
-    transition-all duration-200 rounded-md;
+    @apply flex items-center gap-2 text-teal-600 font-semibold px-4 py-2 transition-all
+     duration-200 rounded-md hover:bg-teal-50 dark:hover:bg-opacity-20 dark:text-teal-200 dark:hover:bg-teal-800;
   }
 }

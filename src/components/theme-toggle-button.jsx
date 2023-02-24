@@ -10,7 +10,7 @@ const ThemeToggleButton = (props) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={dark ? "moon" : "sun"}
+        key={dark ? "sun" : "moon"}
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}

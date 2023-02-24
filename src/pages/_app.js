@@ -10,10 +10,7 @@ export default function App({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Fonts />
 
-      <Layout>
-        <Head>{Component.title}</Head>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }

@@ -1,10 +1,13 @@
+import Layout from "../layout";
 import Section from "@/components/section";
 
 const Projects = () => {
   return (
-    <Section>
-      <h1>This is Projects</h1>
-    </Section>
+    <Layout title="Projects">
+      <Section>
+        <h1>Projects Section</h1>
+      </Section>
+    </Layout>
   );
 };
 

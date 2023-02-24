@@ -6,11 +6,13 @@ import Hamburger from "./hamburger";
 
 const NavBar = (props) => {
   return (
-    <div className="bg-transparent sticky top-0 backdrop-blur transition-all duration-200">
+    <div className="bg-transparent z-10 sticky top-0 backdrop-blur transition-all duration-200">
       <nav className="flex text-lg items-center px-4 py-2 mx-auto md:max-w-3xl">
         <div className="flex items-center gap-1">
           <GiSeaDragon />
-          <h1 className="font-bold">Peter Huynh</h1>
+          <Link className="font-bold" href="/">
+            Peter Huynh
+          </Link>
         </div>
 
         <div className="hidden items-center gap-6 mx-6 md:flex">
@@ -20,7 +22,7 @@ const NavBar = (props) => {
           <Link className="nav-item" href="/">
             About
           </Link>
-          <Link className="nav-item" href="/">
+          <Link className="nav-item" href="/resume">
             Resume
           </Link>
           <a
