@@ -11,7 +11,7 @@ const About = () => {
     <Layout title="Peter Huynh - Hompage">
       <Section>
         <div className="rounded-lg p-3 bg-[#F4EDE4] dark:bg-[#303033] text-center transition-all duration-200">
-          Hello, I&apos;m a recent graduate developer based in the U.S!
+          Hello, I&apos;m a graduate developer based in the U.S!
         </div>
         <div className="flex flex-col items-center py-5 sm:flex-row">
           <div className="grow text-center sm:text-left">
