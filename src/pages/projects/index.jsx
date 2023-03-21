@@ -33,8 +33,8 @@ const Projects = () => {
                 <Image className="rounded-lg" src={quizzcal} />
                 <p className="text-xl my-1">Quizzical</p>
                 <p className="text-sm">
-                  Quiz WebApp that access trivia questions from the Open Trivia
-                  Database API and score players based on their answers.
+                  Quiz WebApp accesses trivia questions from the Open Trivia
+                  Database API.
                 </p>
               </Link>
             </div>
@@ -44,8 +44,8 @@ const Projects = () => {
                 <Image className="rounded-lg" src={weatherBot} />
                 <p className="text-xl my-1">Weather Bot</p>
                 <p className="text-sm">
-                  A Weather Discord Bot to help you be able to know the weather
-                  around the world with just few simple commands.
+                  A Weather Discord Bot reports the weather around the world
+                  with just few simple commands.
                 </p>
               </Link>
             </div>
@@ -58,8 +58,8 @@ const Projects = () => {
                 />
                 <p className="text-xl my-1">Portfolio</p>
                 <p className="text-sm">
-                  A Weather Discord Bot to help you be able to know the weather
-                  around the world with just few simple commands.
+                  Responsive website built with Next.js and styled with Tailwind
+                  CSS
                 </p>
               </Link>
             </div>
