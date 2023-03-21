@@ -6,14 +6,16 @@ const Resume = () => {
   return (
     <Layout title="Resume">
       <Section>
-        <a
-          className="btn mt-12 md:mt-8"
-          rel="noreferrer"
-          target="_blank"
-          href="/Resume_Long_Huynh.pdf"
-        >
-          Download
-        </a>
+        <div className="flex justify-center  mt-12 md:mt-8">
+          <a
+            className="btn"
+            rel="noreferrer"
+            target="_blank"
+            href="/Resume_Long_Huynh.pdf"
+          >
+            Download
+          </a>
+        </div>
       </Section>
       <motion.iframe
         initial={{ y: 10, opacity: 0 }}

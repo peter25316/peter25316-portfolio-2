@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import { extendTheme } from "@chakra-ui/react";
 
 const FontTheme = extendTheme({
@@ -8,7 +8,7 @@ const FontTheme = extendTheme({
   },
 });
 
-const ThemeContext = React.createContext();
+const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
   const [theme, setTheme] = useState(true);
