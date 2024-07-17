@@ -1,4 +1,4 @@
-import Layout from "./layout";
+import Layout from "@/components/layout";
 import Image from "next/image";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -8,7 +8,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 
 const About = () => {
   return (
-    <Layout title="Peter Huynh - Hompage">
+    <Layout title="Peter Huynh">
       <Section>
         <div className="rounded-lg p-3 bg-[#F4EDE4] dark:bg-[#303033] text-center transition-all duration-200">
           Hello, I&apos;m a graduate developer based in the U.S!
@@ -42,7 +42,7 @@ const About = () => {
         </Paragraph>
 
         <div className="flex justify-center mt-6">
-          <Link className="btn" href="/projects">
+          <Link className="btn" href="/works">
             My Portfolio <MdOutlineArrowForwardIos />
           </Link>
         </div>
@@ -64,10 +64,12 @@ const About = () => {
           Computing at George Mason University
         </div>
         <div className="flex mb-1">
-          <span className="font-bold whitespace-nowrap mr-3">
-            2022 - Present
+          <span className="font-bold whitespace-nowrap mr-3">Present</span>
+          <span>
+            Pursuing Master&apos;s Program of Data Science in the Columbian
+            College of Arts & Sciences at the George Washington University.
+            Seeking an internship or entry-level opportunity
           </span>
-          <span>Seeking an internship or entry-level opportunity</span>
         </div>
       </Section>
 

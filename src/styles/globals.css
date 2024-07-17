@@ -14,6 +14,22 @@
      hover:bg-teal-600 transition-all dark:text-gray-800 dark:bg-teal-300 dark:hover:bg-teal-400;
   }
 
+  .link {
+    @apply relative no-underline text-[#3d7aed] dark:text-[#ff63c3];
+  }
+
+  .link::after {
+    @apply content-[''] bg-[#3d7aed] dark:bg-[#ff63c3] h-[1.5px] w-[0%] left-0 bottom-[2px] rounded-lg absolute duration-200;
+  }
+
+  .link:hover::after {
+    @apply w-[100%];
+  }
+
+  .badge {
+    @apply bg-gray-700 dark:bg-[#F4EDE4];
+  }
+
   .nav-item {
     @apply relative;
   }
