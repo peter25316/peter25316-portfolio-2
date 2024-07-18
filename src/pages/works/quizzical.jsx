@@ -36,12 +36,12 @@ const Work = () => {
             <ListItem className="flex items-center">
               <Meta>Website</Meta>
               <a
-                href="https://quizzical-ph.vercel.app/"
+                href="https://quiz-ph.vercel.app/"
                 rel="noreferrer"
                 target="_blank"
                 className="link"
               >
-                https://quizzical-ph.vercel.app/{" "}
+                https://quiz-ph.vercel.app/{" "}
               </a>
               <FiExternalLink className="mx-1 icon" />
             </ListItem>

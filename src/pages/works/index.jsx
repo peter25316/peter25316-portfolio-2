@@ -20,7 +20,7 @@ const Projects = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           Works
         </Heading>
-        <SimpleGrid gap={6} minChildWidth="240px">
+        <SimpleGrid gap={6} minChildWidth="212px">
           <Section>
             <WorkGridItem
               id="airbnb"
