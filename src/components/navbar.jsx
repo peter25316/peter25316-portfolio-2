@@ -16,9 +16,9 @@ const NavBar = () => {
         </div>
 
         <div className="hidden items-center gap-6 mx-6 md:flex">
-          <Link className="nav-item" href="/">
+          {/* <Link className="nav-item" href="/">
             About
-          </Link>
+          </Link> */}
           <Link className="nav-item" href="/works">
             Projects
           </Link>

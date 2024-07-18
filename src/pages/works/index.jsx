@@ -1,16 +1,14 @@
-import Link from "next/link";
-import Image from "next/legacy/image";
 import Layout from "@/components/layout";
 import thumbSortVisual from "../../../public/sorting-visualization.png";
-import thumbQuizzcal from "../../../public/quizzical-landing.png";
-import thumbAirbnb from "../../../public/airbnb.png";
-import thumbWeatherBot from "../../../public/weatherbot.png";
+import thumbQuizzcal from "../../../public/works/quizzical/quizzical-landing.png";
+import thumbAirbnb from "../../../public/works/airbnb/airbnb.png";
+import thumbWeatherBot from "../../../public/works/weather-bot/weatherbot.png";
 import portfolioLight from "../../../public/portfolio-light.png";
 import portfolioDark from "../../../public/portfolio-dark.png";
 import { ThemeContext } from "@/components/theme";
 import { useContext } from "react";
 
-import { Container, Box, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
 import Section from "@/components/section";
 import { WorkGridItem } from "@/components/grid-item";
 
@@ -22,7 +20,7 @@ const Projects = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           Works
         </Heading>
-        <SimpleGrid gap={6} minChildWidth="230px">
+        <SimpleGrid gap={6} minChildWidth="240px">
           <Section>
             <WorkGridItem
               id="airbnb"
@@ -34,7 +32,7 @@ const Projects = () => {
           </Section>
           <Section>
             <WorkGridItem
-              id=""
+              id="sorting-visualization"
               title="Sorting Visualization"
               thumbnail={thumbSortVisual}
             >
@@ -42,25 +40,44 @@ const Projects = () => {
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
-            <WorkGridItem id="" title="Quizzical" thumbnail={thumbQuizzcal}>
+            <WorkGridItem
+              id="quizzical"
+              title="Quizzical"
+              thumbnail={thumbQuizzcal}
+            >
               Quiz WebApp accesses trivia questions from the Open TriviaDatabase
               API.
             </WorkGridItem>
           </Section>
+
           <Section delay={0.1}>
-            <WorkGridItem id="" title="Weather Bot" thumbnail={thumbWeatherBot}>
-              A Weather Discord Bot reports the weather around the world with
-              just few simple commands.
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.2}>
             <WorkGridItem
-              id=""
+              id="portfolio"
               title="Portfolio"
               thumbnail={dark ? portfolioLight : portfolioDark}
             >
               A responsive portfolio website built with Next.js and styled with
               Tailwind CSS
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+
+        <Section delay={0.2}>
+          <Divider my={6} borderWidth="1px 0 0 0" borderColor="#6b7280" />
+          <Heading as="h3" fontSize={20} mb={4}>
+            Collaborations
+          </Heading>
+        </Section>
+
+        <SimpleGrid gap={6} minChildWidth="230px">
+          <Section delay={0.3}>
+            <WorkGridItem
+              id="weather-bot"
+              title="Weather Bot"
+              thumbnail={thumbWeatherBot}
+            >
+              A Weather Discord Bot reports the weather around the world with
+              just few simple commands.
             </WorkGridItem>
           </Section>
         </SimpleGrid>

@@ -1,7 +1,7 @@
 import Layout from "@/components/layout";
 import Image from "next/image";
 import Section from "../components/section";
-import Paragraph from "../components/paragraph";
+import { Paragraph } from "../components/paragraph";
 import Link from "next/link";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
