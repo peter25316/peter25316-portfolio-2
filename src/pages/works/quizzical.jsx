@@ -1,10 +1,4 @@
-import {
-  Container,
-  Badge,
-  UnorderedList,
-  List,
-  ListItem,
-} from "@chakra-ui/react";
+import { Container, Badge, List, ListItem } from "@chakra-ui/react";
 import { FiExternalLink } from "react-icons/fi";
 import { Title, WorkImage, Meta } from "@/components/project";
 import { WorkParagraph } from "@/components/paragraph";
